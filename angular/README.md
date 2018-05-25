@@ -1,10 +1,11 @@
 ## Below are the points that describe new Features and Enhancement in angular 5.
 
-**1. Added AOT compilation for development, now we can use "ng serve --aot". It will decrease build and rebuild time which makes development faster.
+**1.** Added AOT compilation for development, now we can use "ng serve --aot". It will decrease build and rebuild time which makes development faster.
 
 **2.** Preserve Whitespace, we used to add tabs, newlines, and spaces in our templates for better readabilty of code, these tabs, newlines, and spaces are included in our build by the compiler. we can now choose whether to keep it in our template or not. this reduces the bundle size.
 
-    ####we can set this option component specific.
+ #### we can set this option component specific.
+    
     ```
     @Component({
       templateUrl: 'about.component.html',
@@ -13,6 +14,7 @@
     ```
 
     #### or application wide 
+    
     ```
     "angularCompilerOptions": {
         "preserveWhitespaces": false
